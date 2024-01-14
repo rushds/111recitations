@@ -26,3 +26,4 @@ public class  movieRater{
     }
     
 }
+//error cases would be negative numbers, numbers above 10, inputs that are not numbers
