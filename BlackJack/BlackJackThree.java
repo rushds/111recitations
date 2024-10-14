@@ -10,6 +10,14 @@ public class BlackJackThree {
             int dealerCard1 = (int)(Math.random() * 13) + 1;
             int dealerCard2 = (int)(Math.random() * 13) + 1;
             int dealerSum = dealerCard1 + dealerCard2;
+            
+            if(dealerCard1 > 10){
+                dealerCard1 = 10;
+            }
+            if(dealerCard2 > 10){
+                dealerCard2 = 10;
+            }
+            
             for(int i = 0; i < numPlayers; i++){
                 int card1 = (int)(Math.random() * 13) + 1;
                 int card2 = (int)(Math.random() * 13) + 1;
