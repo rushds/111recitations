@@ -1,0 +1,72 @@
+
+Output message, let user know the game has started. Maybe I'd print rules here if I felt extra.
+
+Generate the two pairs of cards internally.
+
+bcs we don't care about the 4 suits, we can simplify our range for each card.
+generate an int using math.random, from 1 - 13.
+
+
+int dealerCard1 = randomInt1-13
+int dealerCard2 = randomInt1-13
+
+int playerCard1 = randomInt1-13
+int playerCard2 = randomInt1-13
+
+reveal both player cards, only dealerCard1 via print statement
+
+ask user what they want to do
+
+if they hit
+    int playerCard3 = randomInt1-13
+    playerSum = sum of all 3
+    if(playerSum > 21) print LOSS, return
+    if(playerSum == 21) print WIN, return
+    dealerSum = sum of 2
+    if(playerSum < dealerSum) print LOSS, return
+    if(playerSum > dealerSum) print WIN, return
+
+if they stand
+    playerSum = sum of 2
+    dealerSum = sum of 2
+    if(playerSum < dealerSum) print LOSS, return
+    if(playerSum > dealerSum) print WIN, return
+
+
+______________________
+V2
+
+
+print message, let user know the game has started. Maybe I'd print rules here if I felt extra.
+
+Generate the two pairs of cards internally.
+
+bcs we don't care about the 4 suits, we can simplify our range for each card.
+generate an int using math.random, from 1 - 13.
+
+
+int dealerCard1 = randomInt1-13
+int dealerCard2 = randomInt1-13
+
+int playerCard1 = randomInt1-13
+int playerCard2 = randomInt1-13
+int playerCard3 = 0;
+
+reveal both player cards, only dealerCard1 via print statement
+
+ask user what they want to do
+
+if they hit
+    playerCard3 = randomInt1-13
+endif
+
+playerSum = sum of all 3
+if(playerSum > 21) print LOSS, return
+if(playerSum == 21) print WIN, return
+dealerSum = sum of 2
+if(playerSum < dealerSum) print LOSS, return
+if(playerSum > dealerSum) print WIN, return
+
+//notice how this structure is a little more clean and simple :D
+
+
