@@ -1,5 +1,3 @@
-package BlackJack;
-
 public class BlackJackThree {
     public static void main(String[] args) {
         System.out.println("Welcome to BlackJack!");
